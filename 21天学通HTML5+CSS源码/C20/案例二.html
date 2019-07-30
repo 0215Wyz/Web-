@@ -1,0 +1,318 @@
+<style>
+body { 
+font : 12px/17px tahoma, arial; 
+color : #000; 
+background : #dae8bd url(bg_lines.gif) no-repeat top 0%; 
+margin : auto auto; 
+padding : 0; 
+text-align : center; 
+} 
+#container { 
+width : 762px; 
+padding : 0; 
+margin : auto; 
+text-align : left; 
+} 
+#intro { 
+vertical-align : bottom; 
+} 
+#pageHeader { 
+padding : 0; 
+margin : 0; 
+height : 246px; 
+border : 1px solid white; 
+}
+#pageHeader h1 { 
+background : url(title_hdr.jpg) no-repeat top left; 
+width : 760px; 
+height : 176px; 
+margin : 70px 0 0 0; 
+padding : 0; 
+}  
+#supportingText { 
+padding : 0; 
+margin : -3px 0 40px 0; 
+background : #d6e6b6; 
+border : 1px solid white; 
+width : 469px; 
+float : right; 
+} 
+#footer { 
+background : #a2c1b9; 
+border-top : 1px solid white; 
+padding : 0 0 2px 24px; 
+} 
+
+
+#pageHeader h1 span { 
+display : none; 
+} 
+#pageHeader h2 { 
+padding : 0; 
+margin : 0; 
+} 
+#pageHeader h2 span { 
+display : none; 
+} 
+
+#quickSummary p.p1 { 
+width : 320px; 
+height : 92px; 
+position : absolute; 
+top : 1px; 
+margin-left : 470px; 
+padding : 0; 
+font-size : 11px; 
+color : #fff; 
+font-family : 微软雅黑; 
+background : url(bg_redbox.png) no-repeat; 
+} 
+#quickSummary p.p1 span { 
+display : none; 
+} 
+#quickSummary p.p2 { 
+display : block; 
+position : absolute; 
+top : 53px; 
+padding : 0 0 0 7px; 
+font-size : 11px; 
+text-align : right; 
+color : #490909; 
+font-family : 微软雅黑; 
+clear : both; 
+} 
+
+#linklist { 
+margin-top : 0px; 
+padding:0;
+height:800;
+} 
+#linkList #linkList2 ul { 
+padding : 20px 10px 10px 10px; 
+display : block; 
+} 
+#linklist li { 
+margin : 2px 0; 
+} 
+#preamble { 
+padding : 0; 
+margin : -3px 0 0 0; 
+width : 288px; 
+float : left; 
+} 
+#preamble h3 { 
+background : url(hdr_enlightenment.png) no-repeat; 
+width : 288px; 
+height : 47px; 
+margin : 0; 
+padding : 0; 
+border-top : 1px solid white; 
+} 
+#preamble h3 span { 
+display : none; 
+} 
+#preamble p { 
+font :  12px/15px 微软雅黑; 
+padding : 0 0 0 3px; 
+width : 288px; 
+} 
+#preamble p.p1 { 
+margin-top : 10px; 
+} 
+
+
+
+#lselect, #larchives { 
+width : 256px; 
+clear : left; 
+padding : 0; 
+margin : 0; 
+} 
+#lselect { 
+
+border-bottom : 1px solid #fff; 
+margin-top : 20px; 
+} 
+#larchives { 
+
+border-bottom : 1px solid #fff; 
+margin-top : 20px; 
+} 
+
+#lselect h3 span, #larchives h3 span { 
+display : none; 
+} 
+
+
+p { 
+font : 12px/17px 微软雅黑; 
+margin : 0 0 17px 0; 
+} 
+a:link { 
+font-weight : bold; 
+text-decoration : none; 
+color : #027d87; 
+} 
+a:visited { 
+font-weight : bold; 
+text-decoration : none; 
+color : #858686; 
+} 
+a.c:visited { 
+font-weight : normal; 
+text-decoration : none; 
+color : #858686; 
+} 
+a:hover, a:active { 
+text-decoration : underline; 
+color : #000505; 
+} 
+ul { 
+list-style-type : none; 
+margin : 0; 
+padding : 0; 
+} 
+
+
+#supportingText { padding : 0; 
+                  margin : -3px 0 40px 0; 
+                  background : #d6e6b6; 
+                  border : 1px solid white; 
+                  width : 469px; 
+                  float : right; 
+                  } 
+#supportingText p { margin : 9px 17px 17px 24px; 
+                   } 
+#explanation h3 { background : url(hdr_about.gif) no-repeat; 
+                  width : 469px; 
+                  height : 32px; 
+                  margin : 0; 
+                  padding : 0; 
+                } 
+#explanation h3 span { display : none; 
+                      } 
+#participation h3 { background : url(hdr_participation.gif) no-repeat; 
+                    width : 469px; 
+                    height : 32px; 
+                    margin : 0; 
+                    padding : 0; 
+                   } 
+#participation h3 span { display : none; 
+                        } 
+#benefits h3 { background : url(hdr_benefits.gif) no-repeat; 
+               width : 469px; 
+               height : 32px; 
+               margin : 0; 
+               } 
+#benefits h3 span { display : none; 
+                   } 
+#requirements h3 { background : url(hdr_requirements.gif) no-repeat; 
+                   width : 469px; 
+                   height : 32px; 
+                   margin : 0; 
+                   padding : 0; 
+                  } 
+#requirements h3 span { display : none; 
+                       } 
+#footer { background : #a2c1b9; 
+          border-top : 1px solid white; 
+          padding : 0 0 2px 24px; 
+          }
+
+</style>
+
+	<body>
+		   <div id="container">
+			<div id="intro">
+                          <div id="pageHeader">		     
+                          <h1><span>更改样式表可以在这个位置替换页面的Banner</span></h1>                                             </div>
+		   <div id="quickSummary">
+			<p class="p1"><span>使用这个样式表可以任意更改页面右上角的图像</span></p>
+			<p class="p2"><span>设计复杂页面<a href="" >html</a> &<a href="">css</a></span></p>
+		</div>
+                      </div>
+	 <div id="supportingText">
+                  <div id="explanation">
+			<h3><span>文本内容一</span></h3>
+			<p ><span>　域名的作用：如果您拥有了一个域名，您就可以用这个域名来做为您公司或博客的网址，或者也可以将这个域名转发到其它的网址，例如你的新浪博客或百度空间站等。域名的另一个作用就是可以用自己的域名建立自己的专用邮局，例如，我们就用 domain.com 与 domain.com 建立了自己的邮局，使用Sales@domain.com 等以自己的域名为后缀的邮件地址。</span></p>
+	  <p >后缀的选择：CN域名主要有 .cn、.com.cn、.net.cn、.org.cn、.gov.cn、.ac.cn 以及 .bj.cn、.sh.cn 等地区域名后缀。详情参见中国互联网络信息中心(CNNIC）相关文章。根据各域名后缀的意义，商都域名推荐商业公司使用.com.cn 或 .cn 类域名，个人或组织使用 .cn 或 .org.cn 域名，.net.cn 为域名注册商等网络服务行业专用后缀，不适用于普通的公司或个人。另外，公司或个人根据其所在地区，也可以选择使用 .bj.cn（北京） 或 .sh.cn（上海） 之类的地区域名。</span></p>
+		</div>
+
+		<div id="participation">
+			<h3><span>文本内容二</span></h3>
+			<p><STRONG> 什么是robots.txt？</STRONG> </p>
+		  <p>robots.txt是一个纯文本文件，通过在这个文件中声明该网站中不想被robots访问的部分，这样，该网站的部分或全部内容就可以不被搜索引擎收录了，或者指定搜索引擎只收录指定的内容。</p>
+		  <p >当一个搜索机器人访问一个站点时，它会首先检查该站点根目录下是否存在robots.txt，如果找到，搜索机器人就会按照该文件中的内容来确定访问的范围，如果该文件不存在，那么搜索机器人就沿着链接抓取。</p>
+		  <p >robots.txt必须放置在一个站点的根目录下，而且文件名必须全部小写。</p>
+			   </div>
+
+		<div id="benefits">
+			<h3><span>文本内容三</span></h3>
+			<p >随着网页制作经验的积累，我们用色有这样的一个趋势:单色-&gt;五彩缤纷-&gt;标准色-&gt;单色。一开始因为技术和知识缺乏，只能制作出简单的网页，色彩单一；在有一定基础和材料后，希望制作一个漂亮的网页，将自己收集的最好的图片，最满意色彩堆砌在页面上；但是时间一长，却发现色彩杂乱，没有个性和风格；第三次重新定位自己的网站，选择好切合自己的色彩，推出的站点往往比较成功；当最后设计理念和技术达到顶峰时，则又返朴归真，用单一色彩甚至非彩色就可以设计出简洁精美的站点。 
+			</p>
+		</div>
+
+		<div id="requirements">
+			<h3><span>文本内容四</span></h3>
+			<p>一般的来说，绝大多数普通受众图形，插件，applets和其它有关的高级Web浏览器特性。对我们来说，页面的实用可能比漂亮更重要，对于用户来说，没有什么比页面能够快速下载更重要了，简而言之，精简你的站点，这是一条最佳的捷径。</p>
+			<p>波士顿一位图形设计者兼美术讲师说:"你必须考虑什么，这一切都应该来自自于你的观众"!</p>
+			<p>为了让每个人满意，一个站点的实用比漂亮更加重要。并且首先，它必须能够快速的被用户端的较老版本的浏览器快速解释。简化你的站点，然而，那未必是最好的办法。</p>
+			<p>考虑一下站点访问者的操作系统，监视器，浏览器，和的连接类型。然后，想想理论上他们需要从你的站点获得什么?他们是想获得连接还是需要实际的内容?如果是普通的站点是否会失望，是否需要为浏览下载特别的插件。有一个窍门就是没有必要为每一个人优化你的站点，要满足每一个访问者显然不可能，你必须为访问者采取适当的技术。</p>
+			<p >&nbsp;</p>
+			</div>
+
+		         <div id="footer">End
+                 </div>
+		     </div>
+<div id="linkList">		
+  <div id="preamble">
+	<h3><span>设计法则</span></h3>
+	<p class="p1"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;保持简单纯朴:
+大多数Web 2.0应用程序都会给用户体验中添加技术层面或者管理层面。如用del.icio.us来管理链接，用flickr来分享照片，或用backpack来安排任务，我们必须要熟悉这些新技术，并花些时间来管理我们的内容。一个好的Web 2.0程序应该短小精干并易于上手，而高明的视觉设计和文本能帮助我们去除入门的屏障。</span></p>
+			<p class="p2"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;呼吸空间:
+Web 2.0网站的排版布局(难度)可说是微乎其微。利用好空白可以使重点突出，易读，易用。空白能让重要信息凸显，让眼睛得以休息，并给予一种安定和秩序的感觉。宽松的行间距也让视线易于跟随文本流动。一些Web 2.0网站的布局简单到令人感到无聊的地步，但若设计上出色的话，一个四平八稳的页面也能成为绝顶的美味大餐。</span></p>
+			<p class="p3"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;大就是美:
+对于Web2.0来讲，越大肯定是越好。大的文字就是。大的文字看起来不累，配合流畅的文字内容使得信息容易被吸收。我们现在强调“无障碍”沟通才是最酷的，做一个自命不凡的网页设计师是可能的，来用硕大的文字吧！确实这种用大字体的狂热跑得太远太离谱已经不合我的品味——当一个页面得正文字号大得超过13磅时，对我来讲看起来象一本低幼识字课本！</span></p>
+
+		</div>
+
+<div id="linkList2">
+			<div id="lselect">
+				<h3 class="select"><span>Select a Design:</span></h3>
+				<ul>
+					<li><a href="" title="AccessKey: a" accesskey="a">目录1</a> —— <a href="" >name one</a></li>
+					<li><a href="" title="AccessKey: b" accesskey="b">目录2</a> —— <a href="" >name two</a></li>
+					<li><a href="" title="AccessKey: c" accesskey="c">目录3</a> —— <a href="">name three</a></li>
+					<li><a href="" title="AccessKey: d" accesskey="d">目录4</a> —— <a href="">name four</a></li>
+					<li><a href="" title="AccessKey: e" accesskey="e">目录5</a> —— <a href="">name five</a></li>
+					<li><a href="" title="AccessKey: f" accesskey="f">目录6</a> —— <a href="">name six</a></li>
+					
+				</ul>
+			</div>
+<div id="larchives">
+				<h3 class="archives"><span>Archives:</span></h3>
+				<ul>
+					<li><a href="" >下一页 &raquo;</a></li>
+					<li><a href="" >内容简介</a></li>
+				</ul>
+			</div>
+			
+			     
+</div>
+
+
+
+
+	</div>
+		</div>
+	</body>
+
+
+
+
+
+
+
+
+
+

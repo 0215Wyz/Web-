@@ -1,0 +1,37 @@
+ 	<html >
+ 	<head>
+        <title>display属性</title>
+ 	<style type="text/css">
+ 		body {font: 80% 黑体;
+ 		text-align:"center";
+ 	        }
+ 			
+ 		h1 {font-size: 2em;
+ 	        }
+ 		h2 {font-size: 1.5em;
+ 		}
+ 		#kuai, #hang {background: silver;
+ 		border: 2px solid black;
+ 		}
+ 		span {  background: white;
+ 			display: block;
+ 		        border: 0.5em dashed green;
+ 			padding: 1em;
+ 			margin: 0.5em;
+ 			}
+ 			span.yanse {
+ 			background: yellow;
+ 			}
+ 			#hang span {
+ 			display: inline;
+ 			}
+ 	</style>
+ 	</head>
+ 	<body>
+ 	<h1 >“块” 和 “行” </h1>
+ 	<h2>块</h2>
+ 	<p id="kuai"><span>北京</span><span class="yanse">上海</span><span>香港 </span><span class="yanse">海南        </span></p>
+ 	<h2>行</h2>
+ 	<p id="hang"><span>北京</span><span class="yanse">上海</span><span>香港 </span><span class="yanse">海南        </span></p>
+ 	</body>
+ 	</html>

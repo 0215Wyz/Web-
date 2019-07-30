@@ -1,0 +1,23 @@
+		<html>
+		  <head>
+		    <title>多重样式表情况下的优先级
+		    </title>
+		<link rel= "stylesheet" type="text/css" href="bobo.css">      
+	     <style type="text/css">
+		   .hui {color:red;
+		       font-size:20px;                                   
+	            }
+		   </style>
+		  </head>
+		  <body>
+		  <div class="bobo">
+		  <p class="hui">多重样式表情况下的优先级
+		  </div>
+		     <div class="hui">
+		     <p class="bobo">多重样式表情况下的优先级
+		     </div>
+		         <div class="hui">
+		         <p style="color:orange"; class="hui";>多重样式表情况下的优先级
+		         </div>
+		  </body>
+		</html>

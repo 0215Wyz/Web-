@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>使用样式表修饰表单的页面</title/>
+<style>
+     body {background-color:teal;
+           }
+     fieldset {	border:2px dashed red;
+	        padding:10px;
+                margin-top:20px;
+                margin-bottom:20px;
+              }
+     legend {font-family:微软雅黑;
+	     font-size: 90%;
+	     letter-spacing: -1px;
+	     font-weight: bold;
+	     line-height: 1.1;
+	     color:#fff;
+	     background: orange;
+	     border: 1px solid #333;
+	     padding: 2px 6px;
+            }
+     h1 {font-family:微软雅黑;
+	 font-size: 175%;
+	 letter-spacing: -1px;
+	 font-weight: normal;
+	 line-height: 1.1;
+	 color:white;
+         }
+     label {width:140px;
+	    height:32px;
+	    margin-top:3px;
+	    margin-right:2px;
+	    padding-top:11px;
+	    padding-left:6px;
+	    background-color:maroon;
+	    float:left;
+	    display: block;
+	    font-family:幼圆;
+	    font-size: 115%;
+	    letter-spacing: -1px;
+	    font-weight: normal;
+	    line-height: 1.1;
+	    color:yellow;
+           }
+    .form {margin:0;
+	   padding:0;
+          }
+    #container {width:750px;
+	        margin:auto;
+	        padding:10px;
+           }
+    #top {width:680px;
+	  height:50px;
+          }
+    #leftSide {	width:530px;
+	        padding-top:30px;
+	        float:left;
+              }
+    .clear {clear:both;
+              }
+    .holder {background-color:#fff;
+             }
+    .div_texbox {width:347px;
+	         float:right;
+	         background-color:#E6E6E6;
+	         height:35px;
+	         margin-top:3px;
+	         padding-top:5px;
+	         padding-bottom:3px;
+	         padding-left:5px;
+                }
+
+    .textbox {background-color:#FFFFFF;
+	      background-repeat: no-repeat;
+	      background-position:left;
+	      width:285px;
+	      font:normal 18px 微软雅黑;
+	      color: black;
+	      padding:3px 5px 3px 19px;
+             }
+    textbox:focus, .textbox:hover {background-color:orange;
+                                  }
+    .username {background-repeat: no-repeat;
+    	       background-position:left;
+    	       background-color:#FFFFFF;
+	       width:285px;
+    	       font:normal 18px 微软雅黑;
+    	       color: black;
+    	       padding:3px 5px 3px 19px;
+              }
+    .username:focus, .username:hover {background-color:orange;
+                                      }
+    .password {background-repeat: no-repeat;
+   	       background-position:left;
+   	       background-color:#FFFFFF;
+	       width:285px;
+    	       font:normal 18px 微软雅黑;
+    	       color: black;
+    	       padding:3px 5px 3px 19px;
+               }
+    .password:focus, .password:hover {background-color:orange;
+                                     }
+
+    .button_div {width:287px;
+	          float:right;
+	          background-color:#fff;
+	          border:1px solid #ccc;
+	          text-align:right;
+	          height:35px;
+	          margin-top:3px;
+	          padding:5px 32px 3px;
+                 }
+    .buttons {background: #e3e3db;
+	      font-size:12px; 
+	      color: #989070; 
+	      padding: 6px 14px;
+	      border-width: 2px;
+	      border-style: solid;
+	      border-color: #fff #d8d8d0 #d8d8d0 #fff;
+	      text-decoration: none;
+	      text-transform:uppercase;
+	      font-weight:bold;
+             }
+   </style>
+  </head>
+
+  <body>
+    <div id="container">
+       <div id="top">
+           <h1>请填写这张表格：</h1>
+       </div>
+         <div id="leftSide">
+           <fieldset>
+             <legend>注册信息：</legend>
+             <form action="login.php" method="POST" class="form">
+             <label for="username">注册名：</label>
+                <div class="div_texbox">
+                  <input name="username" type="text" class="username" id="username" value="depp" />
+	         </div>
+	       <label for="password">密码：</label>
+    <div class="div_texbox">
+    <input name="password" type="password" class="password" id="password" value="password" />
+	</div>
+	<div class="button_div">
+	<input name="Submit" type="button" value="确 定" class="buttons" />
+	</div>
+</form>
+<div class="clear"></div>
+	</fieldset>
+	<hr size="1">
+  <fieldset>
+<legend>个人信息：</legend>
+<form action="..." method="POST" class="form">
+	<label for="name">姓名：</label>
+    <div class="div_texbox">
+    <input name="name" type="text" class="textbox" id="name" value="Depp" />
+	</div>
+	<label for="address">地址：</label>
+	<div class="div_texbox">
+    <input name="address" type="text" class="textbox" id="address" value="G 1128" />
+	</div>
+	<label for="city">所属区：</label>
+	<div class="div_texbox">
+    <input name="city" type="text" class="textbox" id="city" value="浦东新区" />
+	</div>
+	<label for="country">城市：</label>
+	<div class="div_texbox">
+    <input name="country" type="text" class="textbox" id="country" value="上海" />
+	</div>
+	<div class="button_div">
+	<input name="Submit" type="button" value="确 定" class="buttons" />
+	</div>
+</form>
+<div class="clear"></div>
+	</fieldset>
+  </div>
+</div>
+
+
+
+</body>
+</html>

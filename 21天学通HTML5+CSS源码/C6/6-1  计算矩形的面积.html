@@ -1,0 +1,57 @@
+ 	<html>
+ 	<head>
+ 	<title>计算矩形的面积</title>
+ 	<style type=text/css>
+ 	        .result { font-weight: bold; 
+ 	                }  
+ 	</style>
+ 	<script language="JavaScript">
+ 	     /*
+ 	      * 这是一个计算矩形面积和体积的JavaScript。
+ 	      * 定义了一个函数作为事件。
+ 	      */
+ 	    function calculate() {
+ 	        // 获取用户输入的数据。
+ 	        var length = document.loandata.length.value;
+ 	        var width = document.loandata.width.value;
+ 	        var height = document.loandata.height.value;
+ 	       // 获取<span>标签的对象。
+ 	        var area = document.getElementById("area");
+ 	       // 输出计算的结果。
+ 	        area.innerHTML = length * width;
+ 	        volume.innerHTML = length * width * height;
+ 	                         }
+ 	</script>
+ 	</head>
+ 	<body>
+ 	<form name="loandata">
+ 	<table>
+ 	<tr><td><b>输入长宽高的数值：</b></td></tr>
+ 	<tr>
+ 	<td>1) 矩形的长度是:</td>
+ 	<td><input type="text" name="length"></td>
+ 	</tr>
+ 	<tr>
+ 	<td>2) 矩形的宽度是:</td>
+ 	<td><input type="text" name="width"></td>
+ 	</tr>
+ 	<tr>
+ 	<td>3) 矩形的高度是:</td>
+ 	<td><input type="text" name="height"></td>
+ 	</tr>
+ 	<tr><td></td>
+ 	<td><input type="button" value="运行" onclick="calculate();"></td>
+ 	</tr>
+ 	<tr><td><b>矩形的面积和体积分别是：</b></td></tr>
+ 	<tr>
+ 	<td> 矩形的面积：</td>
+ 	<td><span class="result" id="area"></span></td>
+ 	</tr>
+ 	<tr>
+ 	<td> 矩形的体积：</td>
+ 	<td><span class="result" id="volume"></span></td>
+ 	</tr>
+ 	</table>
+ 	</form>
+ 	</body>
+ 	</html>
