@@ -1,0 +1,429 @@
+<html>
+	<head>
+		<title>C运算符</title>
+		<link rel="stylesheet" type="text/css" href="c5.css" />
+		<style type="text/css">
+			#center_navigation{
+				margin:10px 10px 10px 10px;
+				padding:0;
+				/*border-style:dashed;
+				border-width:1px;*/
+				width: 950px;
+				height: 4200px;	
+				color:#36648B;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div id="container">
+			
+			<!--大标题-->
+			<div id="header_index">
+				<h1><a href="#CSCHOOL">Cschool</a></h1>
+			</div>
+			<!--导航栏-->
+			<div id="navigations">
+				<ul>
+					<li><a href="#HMOE">HOME</a></li>
+					<li><a href="#C">C</a></li>
+					<li><a href="#Cplusplus">C++</a></li>
+					<li><a href="#PHP">PHP</a></li>
+					<li><a href="#PYTHON">PYTHON</a></li>
+					<li><a href="#HTML">HTML</a></li>
+					<li><a href="#CSS">CSS</a></li>
+					<li><a href="#JAVA">JAVA</a></li>
+					<li><a href="#SQL">SQL</a></li>
+				</ul>
+			</div >
+			<!--左侧导航栏-->
+			<div id="left_navigation" >
+				<h2><img src="star.jpg" width="60" align="left">C教程</h2>
+				<ul>
+					<li><a href="C语言教程.html" target="_top">C 语言教程</a></li>
+					<li><a href="C简介.html" target="_top">C 简介</a></li>
+					<li><a href="C环境设置.html" target="_top">C 环境设置</a></li>
+					<li><a href="C基本语法.html" target="_top">C 基本语法</a></li>
+					<li><a href="C数据类型.html" target="_top">C 数据类型</a></li>
+					<li><a href="C变量.html" target="_top">C 变量</a></li>
+					<li><a href="C常量.html" target="_top">C 常量</a></li>
+					<li class="currentLink"><a href="C运算符.html" target="_top">C 运算符</a></li>
+					<li><a href="C判断.html" target="_top">C 判断</a></li>
+					<li><a href="C循环.html" target="_top">C 循环</a></li>
+					<li><a href="C函数.html" target="_top">C 函数</a></li>
+					<li><a href="C数组.html" target="_top">C 数组</a></li>
+					<li><a href="C指针.html" target="_top">C 指针</a></li>
+					<li><a href="C字符串.html" target="_top">C 字符串</a></li>
+					<li><a href="C结构体.html" target="_top">C 结构体</a></li>
+					<li><a href="C文件读写.html" target="_top">C 文件读写</a></li>
+				</ul>
+			</div>
+			<!--中间信息栏-->
+			<div id="center_navigation" >
+				<div id="title_navigation">
+					<img src="arrow.jpg" alt="Error" width="60" align="right"/>
+					<h3><a href="C判断.html">C 判断</a></h3>
+				</div>
+				<h1>C 运算符</h1>
+				<p>运算符是一种告诉编译器执行特定的数学或逻辑操作的符号。C 语言内置了丰富的运算符，并提供了以下类型的运算符：</p>
+				<ul>
+					<li>算术运算符</li>
+					<li>关系运算符</li>
+					<li>逻辑运算符</li>
+					<li>位运算符</li>
+					<li>赋值运算符</li>
+					<li>杂项运算符</li>
+				</ul>
+				<hr/>
+				<h2>算术运算符</h2>
+				<p>下表显示了 C 语言支持的所有算术运算符。假设变量 A 的值为 10，变量 B 的值为 20，则：</p>
+				<table class="dataintable">
+					<tr>
+						<td>运算符</td>
+						<td>描述</td>
+						<td>实例</td>
+					</tr>
+					<tr>
+						<td>+</td>
+						<td>把两个操作数相加</td>
+						<td>A + B 将得到 30</td>
+					</tr>
+					<tr>
+						<td>-</td>
+						<td>从第一个操作数中减去第二个操作数</td>
+						<td>A - B 将得到 -10</td>
+					</tr>
+					<tr>
+						<td>*</td>
+						<td>把两个操作数相乘</td>
+						<td>A * B 将得到 200</td>
+					</tr>
+					<tr>
+						<td>/</td>
+						<td>分子除以分母</td>
+						<td>B / A 将得到 2</td>
+					</tr>
+					<tr>
+						<td>%</td>
+						<td>取模运算符，整除后的余数</td>
+						<td>B % A 将得到 0</td>
+					</tr>
+					<tr>
+						<td>++</td>
+						<td>自增运算符，整数值增加 1</td>
+						<td>A++ 将得到 11</td>
+					</tr>
+					<tr>
+						<td>--</td>
+						<td>自减运算符，整数值减少 1</td>
+						<td>A-- 将得到 9</td>
+					</tr>
+				</table>
+				<hr/>
+				<h2>关系运算符</h2>
+				<p>下表显示了 C 语言支持的所有关系运算符。假设变量 A 的值为 10，变量 B 的值为 20，则：</p>
+				<table class="dataintable">
+					<tr>
+						<td>运算符</td>
+						<td>描述</td>
+						<td>实例</td>
+					</tr>
+					<tr>
+						<td>==</td>
+						<td>检查两个操作数的值是否相等，如果相等则条件为真。</td>
+						<td>(A == B) 不为真。</td>
+					</tr>
+					<tr>
+						<td>!=</td>
+						<td>检查两个操作数的值是否相等，如果不相等则条件为真。</td>
+						<td>(A != B) 为真。</td>
+					</tr>
+					<tr>
+						<td>&gt;</td>
+						<td>检查左操作数的值是否大于右操作数的值，如果是则条件为真。</td>
+						<td>(A &gt; B) 不为真。</td>
+					</tr>
+					<tr>
+						<td>&lt;</td>
+						<td>检查左操作数的值是否小于右操作数的值，如果是则条件为真。</td>
+						<td>(A &lt; B) 为真。</td>
+					</tr>
+					<tr>
+						<td>&gt;=</td>
+						<td>检查左操作数的值是否大于或等于右操作数的值，如果是则条件为真。</td>
+						<td>(A &gt;= B) 不为真。</td>
+					</tr>
+					<tr>
+						<td>&lt;=</td>
+						<td>检查左操作数的值是否小于或等于右操作数的值，如果是则条件为真。</td>
+						<td>(A &lt;= B) 为真。</td>
+					</tr>
+				</table>
+				<hr/>
+				<h2>逻辑运算符</h2>
+				<p>下表显示了 C 语言支持的所有关系逻辑运算符。假设变量 A 的值为 1，变量 B 的值为 0，则：</p>
+				<table class="dataintable">
+					<tr>
+						<td>&&</td>
+						<td>称为逻辑与运算符。如果两个操作数都非零，则条件为真。</td>
+						<td>(A && B) 为假。</td>
+					</tr>
+					<tr>
+						<td>||</td>
+						<td>称为逻辑或运算符。如果两个操作数中有任意一个非零，则条件为真。</td>
+						<td>(A || B) 为真。</td>
+					</tr>
+					<tr>
+						<td>!</td>
+						<td>称为逻辑非运算符。用来逆转操作数的逻辑状态。如果条件为真则逻辑非运算符将使其为假。</td>
+						<td>!(A && B) 为真。</td>
+					</tr>
+				</table>
+				<hr/>
+				<h2>位运算符</h2>
+				<p>位运算符作用于位，并逐位执行操作。&、 | 和 ^ 的真值表如下所示：</p>
+				<table class="dataintable">
+					<tr>
+						<td>p</td>
+						<td>q</td>
+						<td>p & q</td>
+						<td>p | q</td>
+						<td>p ^ q</td>
+					</tr>
+					<tr>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>0</td>
+						<td>1</td>
+						<td>0</td>
+						<td>1</td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>1</td>
+						<td>1</td>
+						<td>1</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>0</td>
+						<td>0</td>
+						<td>1</td>
+						<td>1</td>
+					</tr>
+				</table>
+				<p>假设如果 A = 60，且 B = 13，现在以二进制格式表示，它们如下所示：</p>
+				<p>A = 0011 1100</p>
+				<p>B = 0000 1101</p>
+				<p>-----------------</p>
+				<p>A&B = 0000 1100</p>
+				<p>A|B = 0011 1101</p>
+				<p>A^B = 0011 0001</p>
+				<p>~A  = 1100 0011</p>
+				<hr/>
+				<h2>赋值运算符</h2>
+				<p>下表列出了 C 语言支持的赋值运算符：</p>
+				<table class="dataintable">
+					<tr>
+						<td>运算符</td>
+						<td>描述</td>
+						<td>实例</td>
+					</tr>
+					<tr>
+						<td>==</td>
+						<td>简单的赋值运算符，把右边操作数的值赋给左边操作数</td>
+						<td>C = A + B 将把 A + B 的值赋给 C</td>
+					</tr>
+					<tr>
+						<td>+=</td>
+						<td>加且赋值运算符，把右边操作数加上左边操作数的结果赋值给左边操作数</td>
+						<td>C += A 相当于 C = C + A</td>
+					</tr>
+					<tr>
+						<td>-=</td>
+						<td>减且赋值运算符，把左边操作数减去右边操作数的结果赋值给左边操作数</td>
+						<td>C -= A 相当于 C = C - A</td>
+					</tr>
+					<tr>
+						<td>*=</td>
+						<td>乘且赋值运算符，把右边操作数乘以左边操作数的结果赋值给左边操作数</td>
+						<td>C *= A 相当于 C = C * A</td>
+					</tr>
+					<tr>
+						<td>/=</td>
+						<td>除且赋值运算符，把左边操作数除以右边操作数的结果赋值给左边操作数</td>
+						<td>C /= A 相当于 C = C / A</td>
+					</tr>
+					<tr>
+						<td>%=</td>
+						<td>求模且赋值运算符，求两个操作数的模赋值给左边操作数</td>
+						<td>C %= A 相当于 C = C % A</td>
+					</tr>
+					<tr>
+						<td>&lt;&lt;=</td>
+						<td>左移且赋值运算符</td>
+						<td>C &lt;&lt;= 2 等同于 C = C &lt;&lt; 2</td>
+					</tr>
+					<tr>
+						<td>&gt;&gt;=</td>
+						<td>右移且赋值运算符</td>
+						<td>C &gt;&gt; = 2 等同于 C = C &gt;&gt; 2</td>
+					</tr>
+					<tr>
+						<td>&=</td>
+						<td>按位与且赋值运算符</td>
+						<td>C &= 2 等同于 C = C & 2</td>
+					</tr>
+					<tr>
+						<td>^=</td>
+						<td>按位异或且赋值运算符</td>
+						<td>C ^= 2 等同于 C = C ^ 2</td>
+					</tr>
+					<tr>
+						<td>|=</td>
+						<td>按位或且赋值运算符</td>
+						<td>C |= 2 等同于 C = C | 2</td>
+					</tr>
+				</table>
+				<hr/>
+				<h2>杂项运算符 ↦ sizeof & 三元</h2>
+				<p>下表列出了 C 语言支持的其他一些重要的运算符，包括<b> sizeof </b>和 <b>? :。</b></p>
+				<table class="dataintable">
+					<tr>
+						<td>运算符</td>
+						<td>描述</td>
+						<td>实例</td>
+					</tr>
+					<tr>
+						<td>sizeof()</td>
+						<td>返回变量的大小。</td>
+						<td>sizeof(a) 将返回 4，其中 a 是整数。</td>
+					</tr>
+					<tr>
+						<td>&amp;</td>
+						<td>返回变量的地址。</td>
+						<td>&amp;a; 将给出变量的实际地址。</td>
+					</tr>
+					<tr>
+						<td>*</td>
+						<td>指向一个变量。</td>
+						<td>*a; 将指向一个变量。</td>
+					</tr>
+					<tr>
+						<td>? :</td>
+						<td>条件表达式</td>
+						<td>如果条件为真 ? 则值为 X : 否则值为 Y</td>
+					</tr>
+				</table>
+				<hr/>
+				<h2>C 中的运算符优先级</h2>
+				<p>运算符的优先级确定表达式中项的组合。这会影响到一个表达式如何计算。某些运算符比其他运算符有更高的优先级，例如，乘除运算符具有比加减运算符更高的优先级。</p>
+				<p>例如 x = 7 + 3 * 2，在这里，x 被赋值为 13，而不是 20，因为运算符 * 具有比 + 更高的优先级，所以首先计算乘法 3*2，然后再加上 7。</p>
+				<p>下表将按运算符优先级从高到低列出各个运算符，具有较高优先级的运算符出现在表格的上面，具有较低优先级的运算符出现在表格的下面。在表达式中，较高优先级的运算符会优先被计算。</p>
+				<table class="dataintable">
+					<tr>
+						<td>类别</td>
+						<td>运算符</td>
+						<td>结合性</td> 
+					</tr> 
+					<tr>
+						<td>后缀</td>
+						<td>() [] -&gt; .  ++   - - &nbsp;</td>
+						<td>从左到右&nbsp;</td>
+					</tr>
+					<tr>
+						<td>一元</td>
+						<td>+  -   !  ~  ++  - -   (type)*  &amp;  sizeof</td>
+						<td>从右到左</td>
+					</tr> 
+					<tr>
+						<td>乘除&nbsp;</td>
+						<td>*  /  %</td>
+						<td>从左到右</td>
+					</tr> 
+					<tr>
+						<td>加减</td>
+						<td>+  -</td>
+						<td>从左到右</td>
+					</tr>
+					<tr>
+						<td>移位</td>
+						<td>&lt;&lt; &gt;&gt;</td>
+						<td>从左到右</td>
+					</tr> 
+					<tr>
+						<td>关系</td>
+						<td>&lt; &lt;=  &gt; &gt;=</td>
+						<td>从左到右</td> 
+					</tr>
+					<tr>
+						<td>相等</td>
+						<td>==  !=</td>
+						<td>从左到右</td> 
+					</tr> 
+					<tr>
+						<td>位与 AND</td>
+						<td>&amp;</td>
+						<td>从左到右</td> 
+					</tr> 
+					<tr>
+						<td>位异或 XOR</td>
+						<td>^</td> 
+						<td>从左到右</td>
+					</tr> 
+					<tr>
+						<td>位或 OR</td> 
+						<td>|</td> 
+						<td>从左到右</td>
+					</tr> 
+					<tr>
+						<td>逻辑与 AND</td>
+						<td>&amp;&amp;</td> 
+						<td>从左到右</td>
+					</tr>
+					<tr>
+						<td>逻辑或 OR</td> 
+						<td>||</td> 
+						<td>从左到右</td>
+					</tr> 
+					<tr>
+						<td>条件</td>
+						<td>?:</td> 
+						<td>从右到左</td>
+					</tr>
+					<tr>
+						<td>赋</td> 
+						<td>=  +=  -=  *=  /=  %=&gt;&gt;=  &lt;&lt;=  &amp;=  ^=   |=</td>
+						<td>从右到左</td>
+					</tr>
+					<tr>
+						<td>逗号</td>
+						<td>,</td>
+						<td>从左到右</td>
+					</tr> 
+				</table>
+
+			</div>
+			
+			<!--右边导航栏-->
+			<div id="right_navigation">
+				<h2><img src="star.jpg" width="50" align="left">分类导航</h2>
+				<ul>
+					<li><a href="#服务端">服务端</a></li>
+					<li><a href="#数据端">数据端</a></li>
+					<li><a href="#开发工具">开发工具</a></li>
+					<li><a href="#网站建设">网站建设</a></li>
+					<li><a href="#HTML_CSS">HTML/CSS</a></li>
+					<li><a href="#JS">JavaScript</a></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

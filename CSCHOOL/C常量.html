@@ -1,0 +1,183 @@
+<html>
+	<head>
+		<title>C常量</title>
+		<link rel="stylesheet" type="text/css" href="c5.css" />
+		<style type="text/css">
+			#center_navigation{
+				margin:10px 10px 10px 10px;
+				padding:0;
+				/*border-style:dashed;
+				border-width:1px;*/
+				width: 950px;
+				height: 3100px;	
+				color:#36648B;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div id="container">
+			
+			<!--大标题-->
+			<div id="header_index">
+				<h1><a href="#CSCHOOL">Cschool</a></h1>
+			</div>
+			<!--导航栏-->
+			<div id="navigations">
+				<ul>
+					<li><a href="#HMOE">HOME</a></li>
+					<li><a href="#C">C</a></li>
+					<li><a href="#Cplusplus">C++</a></li>
+					<li><a href="#PHP">PHP</a></li>
+					<li><a href="#PYTHON">PYTHON</a></li>
+					<li><a href="#HTML">HTML</a></li>
+					<li><a href="#CSS">CSS</a></li>
+					<li><a href="#JAVA">JAVA</a></li>
+					<li><a href="#SQL">SQL</a></li>
+				</ul>
+			</div >
+			<!--左侧导航栏-->
+			<div id="left_navigation" >
+				<h2><img src="star.jpg" width="60" align="left">C教程</h2>
+				<ul>
+					<li><a href="C语言教程.html" target="_top">C 语言教程</a></li>
+					<li><a href="C简介.html" target="_top">C 简介</a></li>
+					<li><a href="C环境设置.html" target="_top">C 环境设置</a></li>
+					<li><a href="C基本语法.html" target="_top">C 基本语法</a></li>
+					<li><a href="C数据类型.html" target="_top">C 数据类型</a></li>
+					<li><a href="C变量.html" target="_top">C 变量</a></li>
+					<li class="currentLink"><a href="C常量.html" target="_top">C 常量</a></li>
+					<li><a href="C运算符.html" target="_top">C 运算符</a></li>
+					<li><a href="C判断.html" target="_top">C 判断</a></li>
+					<li><a href="C循环.html" target="_top">C 循环</a></li>
+					<li><a href="C函数.html" target="_top">C 函数</a></li>
+					<li><a href="C数组.html" target="_top">C 数组</a></li>
+					<li><a href="C指针.html" target="_top">C 指针</a></li>
+					<li><a href="C字符串.html" target="_top">C 字符串</a></li>
+					<li><a href="C结构体.html" target="_top">C 结构体</a></li>
+					<li><a href="C文件读写.html" target="_top">C 文件读写</a></li>
+				</ul>
+			</div>
+			<!--中间信息栏-->
+			<div id="center_navigation" >
+				<div id="title_navigation">
+					<img src="arrow.jpg" alt="Error" width="60" align="right"/>
+					<h3><a href="C运算符.html">C 运算符</a></h3>
+				</div>
+				<h1>C 常量</h1>
+				<p>常量是固定值，在程序执行期间不会改变。这些固定的值，又叫做字面量。</p>
+				<p>常量可以是任何的基本数据类型，比如整数常量、浮点常量、字符常量，或字符串字面值，也有枚举常量。</p>
+				<p><b>常量</b>就像是常规的变量，只不过常量的值在定义后不能进行修改。</p>
+				<hr/>
+				<h2>整数常量</h2>
+				<p>整数常量可以是十进制、八进制或十六进制的常量。前缀指定基数：0x 或 0X 表示十六进制，0 表示八进制，不带前缀则默认表示十进制。</p>
+				<p>整数常量也可以带一个后缀，后缀是 U 和 L 的组合，U 表示无符号整数（unsigned），L 表示长整数（long）。后缀可以是大写，也可以是小写，U 和 L 的顺序任意。</p>
+				<p>下面列举几个整数常量的实例：</p>
+				<pre>212         /* 合法的 */<br/>215u        /* 合法的 */<br/>0xFeeL      /* 合法的 */<br/>078         /* 非法的：8 不是八进制的数字 */<br/>032UU       /* 非法的：不能重复后缀 */</pre>
+				<p>以下是各种类型的整数常量的实例：</p>
+				<pre>85         /* 十进制 */<br/>0213       /* 八进制 */<br/>0x4b       /* 十六进制 */<br/>30         /* 整数 */<br/>30u        /* 无符号整数 */<br/>30l        /* 长整数 */<br/>30ul       /* 无符号长整数 */</pre>
+				<hr/>
+				<h2>浮点常量</h2>
+				<p>浮点常量由整数部分、小数点、小数部分和指数部分组成。您可以使用小数形式或者指数形式来表示浮点常量。</p>
+				<p>当使用小数形式表示时，必须包含整数部分、小数部分，或同时包含两者。当使用指数形式表示时， 必须包含小数点、指数，或同时包含两者。带符号的指数是用 e 或 E 引入的。</p>
+				<p>下面列举几个浮点常量的实例：</p>
+				<pre>3.14159       /* 合法的 */<br/>314159E-5L    /* 合法的 */<br/>510E          /* 非法的：不完整的指数 */<br/>210f          /* 非法的：没有小数或指数 */<br/>.e55          /* 非法的：缺少整数或分数 */</pre>
+				<hr/>
+				<h2>字符常量</h2>
+				<p>字符常量是括在单引号中，例如，'x' 可以存储在 <b>char </b>类型的简单变量中。</p>
+				<p>字符常量可以是一个普通的字符（例如 'x'）、一个转义序列（例如 '\t'），或一个通用的字符（例如 '\u02C0'）。</p>
+				<p>在 C 中，有一些特定的字符，当它们前面有反斜杠时，它们就具有特殊的含义，被用来表示如换行符（\n）或制表符（\t）等。下表列出了一些这样的转义序列码：</p>
+				<table class="dataintable">
+					<tr>
+						<td>转义序列</td>
+						<td>含义</td>
+					</tr>
+					<tr>
+						<td>\\</td>
+						<td>\字符</td>
+					</tr>
+					<tr>
+						<td>\'</td>
+						<td>'字符</td>
+					</tr>
+					<tr>
+						<td>\"</td>
+						<td>"字符</td>
+					</tr>
+					<tr>
+						<td>\?</td>
+						<td>?字符</td>
+					</tr>
+					<tr>
+						<td>\a</td>
+						<td>警报铃声</td>
+					</tr>
+					<tr>
+						<td>\b</td>
+						<td>退格键</td>
+					</tr>
+					<tr>
+						<td>\f</td>
+						<td>换页符</td>
+					</tr>
+					<tr>
+						<td>\n</td>
+						<td>换行符</td>
+					</tr>
+					<tr>
+						<td>\r</td>
+						<td>回车</td>
+					</tr>
+					<tr>
+						<td>\t</td>
+						<td>水平制表符</td>
+					</tr>
+					<tr>
+						<td>\v</td>
+						<td>垂直制表符</td>
+					</tr>
+					<tr>
+						<td>\ooo</td>
+						<td>一到三位的八进制数</td>
+					</tr>
+					<tr>
+						<td>\xhh . . .</td>
+						<td>一个或多个数字的十六进制数</td>
+					</tr>
+				</table>
+				<hr/>
+				<h2>字符串常量</h2>
+				<p>字符串字面值或常量是括在双引号 "" 中的。一个字符串包含类似于字符常量的字符：普通的字符、转义序列和通用的字符。</p>
+				<p>您可以使用空格做分隔符，把一个很长的字符串常量进行分行。</p>
+				<p>下面的实例显示了一些字符串常量。下面这三种形式所显示的字符串是相同的。</p>
+				<pre>"hello, dear"<br/><br/>"hello, \<br/><br/>dear"<br/><br/>"hello, " "d" "ear"</pre>
+				<hr/>
+				<h2>定义常量</h2>
+				<p>在 C 中，有两种简单的定义常量的方式：</p>
+				<ul>
+					<li>使用 #define 预处理器。</li>
+					<li>使用 const 关键字。</li>
+				</ul>
+				<h2>#define 预处理器</h2>
+				<p>下面是使用 #define 预处理器定义常量的形式：</p>
+				<pre>#define identifier value</pre>
+				<h2>const 关键字</h2>
+				<p>您可以使用 <b>const</b> 前缀声明指定类型的常量，如下所示：</p>
+				<pre>const type variable = value;</pre>
+			</div>
+			
+			<!--右边导航栏-->
+			<div id="right_navigation">
+				<h2><img src="star.jpg" width="50" align="left">分类导航</h2>
+				<ul>
+					<li><a href="#服务端">服务端</a></li>
+					<li><a href="#数据端">数据端</a></li>
+					<li><a href="#开发工具">开发工具</a></li>
+					<li><a href="#网站建设">网站建设</a></li>
+					<li><a href="#HTML_CSS">HTML/CSS</a></li>
+					<li><a href="#JS">JavaScript</a></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

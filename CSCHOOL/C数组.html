@@ -1,0 +1,138 @@
+<html>
+	<head>
+		<title>C数组</title>
+		<link rel="stylesheet" type="text/css" href="c5.css" />
+		<style type="text/css">
+			#center_navigation{
+				margin:10px 10px 10px 10px;
+				padding:0;
+				/*border-style:dashed;
+				border-width:1px;*/
+				width: 950px;
+				height: 2000px;	
+				color:#36648B;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div id="container">
+			
+			<!--大标题-->
+			<div id="header_index">
+				<h1><a href="#CSCHOOL">Cschool</a></h1>
+			</div>
+			<!--导航栏-->
+			<div id="navigations">
+				<ul>
+					<li><a href="#HMOE">HOME</a></li>
+					<li><a href="#C">C</a></li>
+					<li><a href="#Cplusplus">C++</a></li>
+					<li><a href="#PHP">PHP</a></li>
+					<li><a href="#PYTHON">PYTHON</a></li>
+					<li><a href="#HTML">HTML</a></li>
+					<li><a href="#CSS">CSS</a></li>
+					<li><a href="#JAVA">JAVA</a></li>
+					<li><a href="#SQL">SQL</a></li>
+				</ul>
+			</div >
+			<!--左侧导航栏-->
+			<div id="left_navigation" >
+				<h2><img src="star.jpg" width="60" align="left">C教程</h2>
+				<ul>
+					<li><a href="C语言教程.html" target="_top">C 语言教程</a></li>
+					<li><a href="C简介.html" target="_top">C 简介</a></li>
+					<li><a href="C环境设置.html" target="_top">C 环境设置</a></li>
+					<li><a href="C基本语法.html" target="_top">C 基本语法</a></li>
+					<li><a href="C数据类型.html" target="_top">C 数据类型</a></li>
+					<li><a href="C变量.html" target="_top">C 变量</a></li>
+					<li><a href="C常量.html" target="_top">C 常量</a></li>
+					<li><a href="C运算符.html" target="_top">C 运算符</a></li>
+					<li><a href="C判断.html" target="_top">C 判断</a></li>
+					<li><a href="C循环.html" target="_top">C 循环</a></li>
+					<li><a href="C函数.html" target="_top">C 函数</a></li>
+					<li class="currentLink"><a href="C数组.html" target="_top">C 数组</a></li>
+					<li><a href="C指针.html" target="_top">C 指针</a></li>
+					<li><a href="C字符串.html" target="_top">C 字符串</a></li>
+					<li><a href="C结构体.html" target="_top">C 结构体</a></li>
+					<li><a href="C文件读写.html" target="_top">C 文件读写</a></li>
+				</ul>
+			</div>
+			<!--中间信息栏-->
+			<div id="center_navigation" >
+				<div id="title_navigation">
+					<img src="arrow.jpg" alt="Error" width="60" align="right"/>
+					<h3><a href="C指针.html">C 指针</a></h3>
+				</div>
+				<h1>C数组</h1>
+				<p>C 语言支持<b>数组</b>数据结构，它可以存储一个固定大小的相同类型元素的顺序集合。数组是用来存储一系列数据，但它往往被认为是一系列相同类型的变量。</p>
+				<p>数组的声明并不是声明一个个单独的变量，比如 number0、number1、...、number99，而是声明一个数组变量，比如 numbers，然后使用 numbers[0]、numbers[1]、...、numbers[99] 来代表一个个单独的变量。数组中的特定元素可以通过索引访问。</p>
+				<p>所有的数组都是由连续的内存位置组成。最低的地址对应第一个元素，最高的地址对应最后一个元素。</p>
+				<img src="arrays.jpg" alt="Error" width="500" align="center"/>
+				<hr/>
+				<h2>声明数组</h2>
+				<p>在 C 中要声明一个数组，需要指定元素的类型和元素的数量，如下所示：</p>
+				<pre>type arrayName [ arraySize ];</pre>
+				<p>这叫做一维数组。<b>arraySize </b>必须是一个大于零的整数常量，<b>type</b> 可以是任意有效的 C 数据类型。例如，要声明一个类型为 double 的包含 10 个元素的数组 <b>balance</b>，声明语句如下：</p>
+				<pre>double balance[10];</pre>
+				<p>现在<i> balance </i>是一个可用的数组，可以容纳 10 个类型为 double 的数字。</p>
+				<hr/>
+				<h2>初始化数组</h2>
+				<p>在 C 中，您可以逐个初始化数组，也可以使用一个初始化语句，如下所示：</p>
+				<pre>double balance[5] = {1000.0, 2.0, 3.4, 7.0, 50.0};</pre>
+				<p>大括号 { } 之间的值的数目不能大于我们在数组声明时在方括号 [ ] 中指定的元素数目。</p>
+				<p>如果您省略掉了数组的大小，数组的大小则为初始化时元素的个数。因此，如果：</p>
+				<pre>double balance[] = {1000.0, 2.0, 3.4, 7.0, 50.0};</pre>
+				<p>您将创建一个数组，它与前一个实例中所创建的数组是完全相同的。下面是一个为数组中某个元素赋值的实例：</p>
+				<pre>balance[4] = 50.0;</pre>
+				<p>上述的语句把数组中第五个元素的值赋为 50.0。所有的数组都是以 0 作为它们第一个元素的索引，也被称为基索引，数组的最后一个索引是数组的总大小减去 1。以下是上面所讨论的数组的的图形表示：</p>
+				<img src="arrays2.jpg" alt="Error" width="500" align="center"/>
+				<hr/>
+				<h2>访问数组元素</h2>
+				<p>上述的语句把数组中第五个元素的值赋为 50.0。所有的数组都是以 0 作为它们第一个元素的索引，也被称为基索引，数组的最后一个索引是数组的总大小减去 1。以下是上面所讨论的数组的的图形表示：</p>
+				<pre>double salary = balance[9];</pre>
+				<p>上面的语句将把数组中第 10 个元素的值赋给 salary 变量。</p>
+				<hr/>
+				<h2>C 中数组详解</h2>
+				<p>在 C 中，数组是非常重要的，我们需要了解更多有关数组的细节。下面列出了 C 程序员必须清楚的一些与数组相关的重要概念：</p>
+				<table class="dataintable">
+					<tr>
+						<td>概念</td>
+						<td>描述</td>
+					</tr>
+					<tr>
+						<td>多维数组</td>
+						<td>C 支持多维数组。多维数组最简单的形式是二维数组。</td>
+					</tr>
+					<tr>
+						<td>传递数组给函数</td>
+						<td>您可以通过指定不带索引的数组名称来给函数传递一个指向数组的指针。</td>
+					</tr>
+					<tr>
+						<td>从函数返回数组</td>
+						<td>C 允许从函数返回数组。</td>
+					</tr>
+					<tr>
+						<td>指向数组的指针</td>
+						<td>您可以通过指定不带索引的数组名称来生成一个指向数组中第一个元素的指针。</td>
+					</tr>
+				</table>
+				
+				
+				
+			</div>
+			<!--右边导航栏-->
+			<div id="right_navigation">
+				<h2><img src="star.jpg" width="50" align="left">分类导航</h2>
+				<ul>
+					<li><a href="#服务端">服务端</a></li>
+					<li><a href="#数据端">数据端</a></li>
+					<li><a href="#开发工具">开发工具</a></li>
+					<li><a href="#网站建设">网站建设</a></li>
+					<li><a href="#HTML_CSS">HTML/CSS</a></li>
+					<li><a href="#JS">JavaScript</a></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

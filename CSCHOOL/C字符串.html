@@ -1,0 +1,125 @@
+<html>
+	<head>
+		<title>C字符串</title>
+		<link rel="stylesheet" type="text/css" href="c5.css" />
+		<style type="text/css">
+			#center_navigation{
+				margin:10px 10px 10px 10px;
+				padding:0;
+				/*border-style:dashed;
+				border-width:1px;*/
+				width: 950px;
+				height: 1500px;	
+				color:#36648B;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div id="container">
+			
+			<!--大标题-->
+			<div id="header_index">
+				<h1><a href="#CSCHOOL">Cschool</a></h1>
+			</div>
+			<!--导航栏-->
+			<div id="navigations">
+				<ul>
+					<li><a href="#HMOE">HOME</a></li>
+					<li><a href="#C">C</a></li>
+					<li><a href="#Cplusplus">C++</a></li>
+					<li><a href="#PHP">PHP</a></li>
+					<li><a href="#PYTHON">PYTHON</a></li>
+					<li><a href="#HTML">HTML</a></li>
+					<li><a href="#CSS">CSS</a></li>
+					<li><a href="#JAVA">JAVA</a></li>
+					<li><a href="#SQL">SQL</a></li>
+				</ul>
+			</div >
+			<!--左侧导航栏-->
+			<div id="left_navigation" >
+				<h2><img src="star.jpg" width="60" align="left">C教程</h2>
+				<ul>
+					<li><a href="C语言教程.html" target="_top">C 语言教程</a></li>
+					<li><a href="C简介.html" target="_top">C 简介</a></li>
+					<li><a href="C环境设置.html" target="_top">C 环境设置</a></li>
+					<li><a href="C基本语法.html" target="_top">C 基本语法</a></li>
+					<li><a href="C数据类型.html" target="_top">C 数据类型</a></li>
+					<li><a href="C变量.html" target="_top">C 变量</a></li>
+					<li><a href="C常量.html" target="_top">C 常量</a></li>
+					<li><a href="C运算符.html" target="_top">C 运算符</a></li>
+					<li><a href="C判断.html" target="_top">C 判断</a></li>
+					<li><a href="C循环.html" target="_top">C 循环</a></li>
+					<li><a href="C函数.html" target="_top">C 函数</a></li>
+					<li><a href="C数组.html" target="_top">C 数组</a></li>
+					<li><a href="C指针.html" target="_top">C 指针</a></li>
+					<li class="currentLink"><a href="C字符串.html" target="_top">C 字符串</a></li>
+					<li><a href="C结构体.html" target="_top">C 结构体</a></li>
+					<li><a href="C文件读写.html" target="_top">C 文件读写</a></li>
+				</ul>
+			</div>
+			<!--中间信息栏-->
+			<div id="center_navigation" >
+				<div id="title_navigation">
+					<img src="arrow.jpg" alt="Error" width="60" align="right"/>
+					<h3><a href="C结构体.html">C结构体</a></h3>
+				</div>
+				<h1>C字符串</h1>
+				<p>在 C 语言中，字符串实际上是使用 null 字符 '\0' 终止的一维字符数组。因此，一个以 null 结尾的字符串，包含了组成字符串的字符。</p>
+				<p>下面的声明和初始化创建了一个 "Hello" 字符串。由于在数组的末尾存储了空字符，所以字符数组的大小比单词 "Hello" 的字符数多一个。</p>
+				<pre>char greeting[6] = {'H', 'e', 'l', 'l', 'o', '\0'};</pre>
+				<p>依据数组初始化规则，您可以把上面的语句写成以下语句：</p>
+				<pre>char greeting[] = "Hello";</pre>
+				<p>以下是 C/C++ 中定义的字符串的内存表示：</p>
+				<img src="string.jpg" width="500" alt="Error" align="center"/>
+				<p>其实，不需要把 null 字符放在字符串常量的末尾。C 编译器会在初始化数组时，自动把 '\0' 放在字符串的末尾。让我们尝试输出上面的字符串：</p>
+				<pre>#include &lt;stdio.h&gt;<br/><br/> int main ()<br/>{<br/>   char greeting[6] = {'H', 'e', 'l', 'l', 'o', '\0'};<br/><br/>    printf("Greeting message: %s\n", greeting );<br/><br/>    return 0;<br/>}</pre>
+				<p>当上面的代码被编译和执行时，它会产生下列结果：</p>
+				<pre>Greeting message: Hello</pre>
+				<p>C 中有大量操作字符串的函数：</p>
+				<table class="dataintable">
+					<tr>
+						<td>序号</td>
+						<td>函数&amp;目的</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td><b>strcpy(s1, s2);</b><br/>复制字符串 s2 到字符串 s1。</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td><b>strcat(s1, s2);</b><br/>连接字符串 s2 到字符串 s1 的末尾。</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td><b>	strlen(s1);</b>返回字符串 s1 的长度。</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td><b>strcmp(s1, s2);</b><br/>如果 s1 和 s2 是相同的，则返回 0；如果 s1&lt;s2 则返回小于 0；如果 s1&gt;s2 则返回大于 0。</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td><b>strchr(s1, ch);</b><br/>返回一个指针，指向字符串 s1 中字符 ch 的第一次出现的位置。</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td><b>strstr(s1, s2);</b><br/>返回一个指针，指向字符串 s1 中字符串 s2 的第一次出现的位置。</td>
+					</tr>
+				</table>
+			</div>
+			<!--右边导航栏-->
+			<div id="right_navigation">
+				<h2><img src="star.jpg" width="50" align="left">分类导航</h2>
+				<ul>
+					<li><a href="#服务端">服务端</a></li>
+					<li><a href="#数据端">数据端</a></li>
+					<li><a href="#开发工具">开发工具</a></li>
+					<li><a href="#网站建设">网站建设</a></li>
+					<li><a href="#HTML_CSS">HTML/CSS</a></li>
+					<li><a href="#JS">JavaScript</a></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

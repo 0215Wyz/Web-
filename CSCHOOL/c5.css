@@ -1,0 +1,247 @@
+			#container{
+				margin:0 auto;
+				width:1300px;
+				background-image:url(background.jpg);
+			}
+			div{
+				float:left;
+			}
+			/*大标题*/
+			#header_index{
+				font-family:Times New Roman;
+				margin:0 0 0 500px;
+				padding:0;
+				border: 0;
+				width: 1333px;
+				height: 100px;
+			}
+			
+			/*link：设置a对象在未被访问前的样式表属性*/
+			/*visited：设置a对象在其链接地址已被访问过时的样式表属性*/
+			/*hover：设置对象在其鼠标悬停时的样式表属性。*/
+			/*active：设置对象在被用户激活（在鼠标点击与释放之间发生的事件）时的样式表属性。*/
+			
+			#header_index a:link,#header_index a:visited{ 
+				font-weight:bold;
+				color:#050505;
+				font-size:60px;
+				text-align:center;
+				padding:0 40px 0 40px;
+				text-decoration:none;
+			}
+			#header_index a:hover{
+				color:red;
+			}
+			#header_index a:active{
+				color:yellow;
+			}
+			
+			/*导航条*/
+			#navigations{
+				margin:0;
+				padding: 0;
+				border: 0;
+				background-color:#98bf21;
+				width: 1333px;
+				height: 50px;
+			}
+			
+			#navigations a:link,#navigations a:visited{
+				font-weight:bold;
+				font-family:Times New Roman;
+				color:#FFFFFF;
+				background-color:#98bf21;
+				text-align:center;
+				padding:0 40px 0 40px;
+				text-decoration:none;
+				text-transform:uppercase;
+			}
+			#navigations a:hover,#navigations a:active{
+				background-color:#7A991A;
+			}
+			
+			#navigations ul{
+				list-style-type:none;
+				margin:0;
+				padding:15px;
+			}
+			#navigations li{
+				display:inline;
+			}
+			
+			/*翻页设置*/
+			#title_navigation{
+				margin:0;
+				padding: 0;
+				text-align:right;
+				border: 0;
+				background-color:#FFF8DC;
+				width: 950px;
+				height: 65px;
+				border-top-left-radius:20px;
+				border-top-right-radius:20px;
+				border-bottom-left-radius:20px;
+				border-bottom-right-radius:20px;
+				box-shadow:4px 4px 2px 2px #C9C9C9;
+			}
+			
+			#title_navigation a:link,#title_navigation a:visited{
+				font-weight:bold;
+				font-family:Times New Roman;
+				color:#000000;
+				background-color:transparent;
+				text-align:right;
+				vartical-align:top;
+				padding:0;
+				text-decoration:none;
+			}
+			
+			#title_navigation a:hover,#title_navigation a:active{
+				background-color:transparent;
+			}
+
+			/*左侧导航条*/
+			#left_navigation{
+				margin:10px 0 10px 0;
+				padding:0;
+				border-style:dashed;
+				border-width:1px;
+				width: 148px;
+				height: 800px;				
+			}
+			
+			#left_navigation h2{
+				font-family:微软黑雅;
+				text-align:center;
+			}
+			
+			#left_navigation a:link,a:visited{
+				font-weight:bold;
+				border-style:solid;
+				border-width:1px;
+				font-family:微软黑雅;
+				font-size:15px;
+				display:block;
+				background-color:transparent;
+				color:#050505;
+				margin:1px 0 0 0;
+				text-align:center;
+				padding:10px 0 10px 0;
+				text-decoration:none;
+				text-transform:uppercase;
+			}
+			#left_navigation a:hover,a:active{
+				color:#FFFFFF;
+				background-color:#000000;
+			}
+			
+			#left_navigation ul{
+				list-style-type:none;
+				margin:0;
+				padding:15px;
+			}	
+
+			#left_navigation li.currentLink a{
+				font-weight:bold;
+				border-style:solid;
+				border-width:1px;
+				font-family:微软黑雅;
+				font-size:15px;
+				display:block;
+				background-color:#A2B5CD;
+				color:#050505;
+				margin:1px 0 0 0;
+				text-align:center;
+				padding:10px 0 10px 0;
+				text-decoration:none;
+				text-transform:uppercase;				
+			}	
+			
+			/*中间简介*/			
+			#center_navigation p{
+				font-size:20px;
+				color:#000000;
+			}
+			
+			#center_navigation li{
+				padding:5px 0 5px 0;
+				font-size:20px;
+				color:#000000;
+				font-family:微软黑雅;
+			}
+			
+			#center_navigation pre{
+				font-size:20px;
+				color:#551A8B;
+				border-style:dotted;
+				border-width:1px;
+				border-color:#551A8B;
+			}
+			
+			table.dataintable {
+				margin-top:15px;
+				border-collapse:collapse;
+				border:1px solid #aaa;
+				width:100%;
+			}
+			
+			table.dataintable th {
+				vertical-align:baseline;
+				padding:10px 10px 10px 10px;
+				background-color:#3F3F3F;
+				border:1px solid #3F3F3F;
+				text-align:left;
+				color:#fff;
+				}
+
+			table.dataintable td {
+				vertical-align:text-top;
+				padding:9px 9px 9px 9px;
+				border:1px solid #aaa;
+				}
+
+			table.dataintable tr:nth-child(odd) {
+				background-color:#F5F5F5;
+			}
+
+			table.dataintable tr:nth-child(even) {
+				background-color:#fff;
+			}	
+			
+			/*右侧简介*/
+			#right_navigation{
+				margin:10px 0 10px 10px;
+				padding:0;
+				border-style:dashed;
+				border-width:1px;
+				width: 156px;
+				height: 500px;					
+			}
+			
+			#right_navigation a:link,a:visited{
+				font-weight:bold;
+				font-family:微软黑雅;
+				font-size:15px;
+				display:block;
+				background-color:transparent;
+				color:#050505;
+				text-align:center;
+				padding:20px 10px 20px 10px;
+				text-decoration:none;
+				text-transform:uppercase;
+			}
+			#right_navigation a:hover,a:active{
+				color:yellow;
+				background-color:#CD5B45;
+			}
+			
+			#right_navigation ul{
+				list-style-type:none;
+				margin:0;
+				padding:15px;
+			}
+			
+			#right_navigation h2{
+				font-family:微软黑雅;
+				text-align:center;
+			}

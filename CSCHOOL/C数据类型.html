@@ -1,0 +1,221 @@
+<html>
+	<head>
+		<title>C数据类型</title>
+		<link rel="stylesheet" type="text/css" href="c5.css" />
+		<style type="text/css">
+			#center_navigation{
+				margin:10px 10px 10px 10px;
+				padding:0;
+				/*border-style:dashed;
+				border-width:1px;*/
+				width: 950px;
+				height: 2700px;	
+				color:#36648B;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div id="container">
+			
+			<!--大标题-->
+			<div id="header_index">
+				<h1><a href="#CSCHOOL">Cschool</a></h1>
+			</div>
+			<!--导航栏-->
+			<div id="navigations">
+				<ul>
+					<li><a href="#HMOE">HOME</a></li>
+					<li><a href="#C">C</a></li>
+					<li><a href="#Cplusplus">C++</a></li>
+					<li><a href="#PHP">PHP</a></li>
+					<li><a href="#PYTHON">PYTHON</a></li>
+					<li><a href="#HTML">HTML</a></li>
+					<li><a href="#CSS">CSS</a></li>
+					<li><a href="#JAVA">JAVA</a></li>
+					<li><a href="#SQL">SQL</a></li>
+				</ul>
+			</div >
+			<!--左侧导航栏-->
+			<div id="left_navigation" >
+				<h2><img src="star.jpg" width="60" align="left">C教程</h2>
+				<ul>
+					<li><a href="C语言教程.html" target="_top">C 语言教程</a></li>
+					<li><a href="C简介.html" target="_top">C 简介</a></li>
+					<li><a href="C环境设置.html" target="_top">C 环境设置</a></li>
+					<li><a href="C基本语法.html" target="_top">C 基本语法</a></li>
+					<li class="currentLink"><a href="C数据类型.html" target="_top">C 数据类型</a></li>
+					<li><a href="C变量.html" target="_top">C 变量</a></li>
+					<li><a href="C常量.html" target="_top">C 常量</a></li>
+					<li><a href="C运算符.html" target="_top">C 运算符</a></li>
+					<li><a href="C判断.html" target="_top">C 判断</a></li>
+					<li><a href="C循环.html" target="_top">C 循环</a></li>
+					<li><a href="C函数.html" target="_top">C 函数</a></li>
+					<li><a href="C数组.html" target="_top">C 数组</a></li>
+					<li><a href="C指针.html" target="_top">C 指针</a></li>
+					<li><a href="C字符串.html" target="_top">C 字符串</a></li>
+					<li><a href="C结构体.html" target="_top">C 结构体</a></li>
+					<li><a href="C文件读写.html" target="_top">C 文件读写</a></li>
+				</ul>
+			</div>
+			<!--中间信息栏-->
+			<div id="center_navigation" >
+				<div id="title_navigation">
+					<img src="arrow.jpg" alt="Error" width="60" align="right"/>
+					<h3><a href="C变量.html">C变量</a></h3>
+				</div>
+				<h1>C数据类型</h1>
+				<p>在 C 语言中，数据类型指的是用于声明不同类型的变量或函数的一个广泛的系统。变量的类型决定了变量存储占用的空间，以及如何解释存储的位模式。</p>
+				<p>C 中的类型可分为以下几种：</p>
+				<table class="dataintable">
+					<tr>
+						<td>序号</td>
+						<td>类型与描述</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td><b>基本类型</b>：<br/>它们是算术类型，包括两种类型：整数类型和浮点类型。</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td><b>枚举类型</b>：<br/>它们也是算术类型，被用来定义在程序中只能赋予其一定的离散整数值的变量。</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td><b>void 类型</b>：<br/>类型说明符 void 表明没有可用的值。</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td><b>派生类型</b>：<br/>它们包括：指针类型、数组类型、结构类型、共用体类型和函数类型。</td>
+					</tr>
+				</table>
+				<hr />
+				<h2>整数类型</h2>
+				<p>下表列出了关于标准整数类型的存储大小和值范围的细节：</p>
+				<table class="dataintable">
+					<tr>
+						<td>类型</td>
+						<td>存储大小</td>
+						<td>值范围</td>
+					</tr>
+					<tr>
+						<td>char</td>
+						<td>1 字节</td>
+						<td>-128 到 127 或 0 到 255</td>
+					</tr>
+					<tr>
+						<td>unsigned char</td>
+						<td>1 字节</td>
+						<td>0 到 255</td>
+					</tr>
+					<tr>
+						<td>signed char</td>
+						<td>1 字节</td>
+						<td>-128 到 127</td>
+					</tr>
+					<tr>
+						<td>int</td>
+						<td>2 或 4 字节</td>
+						<td>-32,768 到 32,767 或 -2,147,483,648 到 2,147,483,647</td>
+					</tr>
+					<tr>
+						<td>unsigned int</td>
+						<td>2 或 4 字节</td>
+						<td>0 到 65,535 或 0 到 4,294,967,295</td>
+					</tr>
+					<tr>
+						<td>short</td>
+						<td>2 字节</td>
+						<td>-32,768 到 32,767</td>
+					</tr>
+					<tr>
+						<td>unsigned short</td>
+						<td>2 字节</td>
+						<td>0 到 65,535</td>
+					</tr>
+					<tr>
+						<td>long</td>
+						<td>4 字节</td>
+						<td>-2,147,483,648 到 2,147,483,647</td>
+					</tr>
+					<tr>
+						<td>unsigned long</td>
+						<td>4 字节</td>
+						<td>0 到 4,294,967,295</td>
+					</tr>
+				</table>
+				<p>为了得到某个类型或某个变量在特定平台上的准确大小，您可以使用 sizeof 运算符。表达式 sizeof(type) 得到对象或类型的存储字节大小。下面的实例演示了获取 int 类型的大小：</p>
+				<pre>#include &#60;stdio.h&#62;<br/>#include &#60;limits.h&#62;<br/><br/>int main()<br/>{<br/>&nbsp;printf("int 存储大小 : %lu \n", sizeof(int));<br/><br/>&nbsp;return 0;<br/>}</pre>
+				<p><b>%lu</b> 为 32 位无符号整数</p>
+				<p>当您在 Linux 上编译并执行上面的程序时，它会产生下列结果：</p>
+				<pre>int 存储大小 : 4 </pre>
+				<hr />
+				<h2>浮点类型</h2>
+				<p>下表列出了关于标准浮点类型的存储大小、值范围和精度的细节：</p>
+				<table class="dataintable">
+					<tr>
+						<td>类型</td>
+						<td>存储大小</td>
+						<td>值范围</td>
+						<td>精度</td>
+					</tr>
+					<tr>
+						<td>float</td>
+						<td>4 字节</td>
+						<td>1.2E-38 到 3.4E+38</td>
+						<td>6 位小数</td>
+					</tr>
+					<tr>
+						<td>double</td>
+						<td>8 字节</td>
+						<td>2.3E-308 到 1.7E+308</td>
+						<td>15 位小数</td>
+					</tr>
+					<tr>
+						<td>long double</td>
+						<td>16 字节</td>
+						<td>3.4E-4932 到 1.1E+4932</td>
+						<td>19 位小数</td>
+					</tr>
+				</table>
+				<p>头文件 float.h 定义了宏，在程序中可以使用这些值和其他有关实数二进制表示的细节。下面的实例将输出浮点类型占用的存储空间以及它的范围值：</p>
+				<pre>#include &#60;stdio.h&#62;<br/>#include &#60;float.h&#62;<br/>int main()<br/>{<br/>printf("float 存储最大字节数 : %lu \n", sizeof(float));<br/>printf("float 最小值: %E\n", FLT_MIN );<br/>printf("float 最大值: %E\n", FLT_MAX );<br/>printf("精度值: %d\n", FLT_DIG );<br/>return 0;<br/>}</pre>
+				<p><b>%E </b>为以指数形式输出单、双精度实数。</p>
+				<p>当您在 Linux 上编译并执行上面的程序时，它会产生下列结果：</p>
+				<pre>float 存储最大字节数 : 4<br/>float 最小值: 1.175494E-38<br/>float 最大值: 3.402823E+38<br/>精度值: 6</pre>
+				<hr/>
+				<h2>void 类型</h2>
+				<table class="dataintable">
+					<tr>
+						<td>序号</td>
+						<td>类型与描述</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td><b>函数返回为空</b><br/>C 中有各种函数都不返回值，或者您可以说它们返回空。不返回值的函数的返回类型为空。例如 <b>void exit (int status);</b></td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td><b>函数参数为空</b><br/>C 中有各种函数不接受任何参数。不带参数的函数可以接受一个 void。例如<b> int rand(void);</b></td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td><b>指针指向 void</b><br/>类型为 void * 的指针代表对象的地址，而不是类型。例如，内存分配函数 <b>void *malloc( size_t size ); </b>返回指向 void 的指针，可以转换为任何数据类型。</td>
+					</tr>
+				</table>
+			</div>
+			<!--右边导航栏-->
+			<div id="right_navigation">
+				<h2><img src="star.jpg" width="50" align="left">分类导航</h2>
+				<ul>
+					<li><a href="#服务端">服务端</a></li>
+					<li><a href="#数据端">数据端</a></li>
+					<li><a href="#开发工具">开发工具</a></li>
+					<li><a href="#网站建设">网站建设</a></li>
+					<li><a href="#HTML_CSS">HTML/CSS</a></li>
+					<li><a href="#JS">JavaScript</a></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

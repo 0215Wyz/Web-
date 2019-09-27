@@ -1,0 +1,140 @@
+<html>
+	<head>
+		<title>C循环</title>
+		<link rel="stylesheet" type="text/css" href="c5.css" />
+		<style type="text/css">
+			#center_navigation{
+				margin:10px 10px 10px 10px;
+				padding:0;
+				/*border-style:dashed;
+				border-width:1px;*/
+				width: 950px;
+				height: 2000px;	
+				color:#36648B;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div id="container">
+			
+			<!--大标题-->
+			<div id="header_index">
+				<h1><a href="#CSCHOOL">Cschool</a></h1>
+			</div>
+			<!--导航栏-->
+			<div id="navigations">
+				<ul>
+					<li><a href="#HMOE">HOME</a></li>
+					<li><a href="#C">C</a></li>
+					<li><a href="#Cplusplus">C++</a></li>
+					<li><a href="#PHP">PHP</a></li>
+					<li><a href="#PYTHON">PYTHON</a></li>
+					<li><a href="#HTML">HTML</a></li>
+					<li><a href="#CSS">CSS</a></li>
+					<li><a href="#JAVA">JAVA</a></li>
+					<li><a href="#SQL">SQL</a></li>
+				</ul>
+			</div >
+			<!--左侧导航栏-->
+			<div id="left_navigation" >
+				<h2><img src="star.jpg" width="60" align="left">C教程</h2>
+				<ul>
+					<li><a href="C语言教程.html" target="_top">C 语言教程</a></li>
+					<li><a href="C简介.html" target="_top">C 简介</a></li>
+					<li><a href="C环境设置.html" target="_top">C 环境设置</a></li>
+					<li><a href="C基本语法.html" target="_top">C 基本语法</a></li>
+					<li><a href="C数据类型.html" target="_top">C 数据类型</a></li>
+					<li><a href="C变量.html" target="_top">C 变量</a></li>
+					<li><a href="C常量.html" target="_top">C 常量</a></li>
+					<li><a href="C运算符.html" target="_top">C 运算符</a></li>
+					<li><a href="C判断.html" target="_top">C 判断</a></li>
+					<li class="currentLink"><a href="C循环.html" target="_top">C 循环</a></li>
+					<li><a href="C函数.html" target="_top">C 函数</a></li>
+					<li><a href="C数组.html" target="_top">C 数组</a></li>
+					<li><a href="C指针.html" target="_top">C 指针</a></li>
+					<li><a href="C字符串.html" target="_top">C 字符串</a></li>
+					<li><a href="C结构体.html" target="_top">C 结构体</a></li>
+					<li><a href="C文件读写.html" target="_top">C 文件读写</a></li>
+				</ul>
+			</div>
+			<!--中间信息栏-->
+			<div id="center_navigation" >
+				<div id="title_navigation">
+					<img src="arrow.jpg" alt="Error" width="60" align="right"/>
+					<h3><a href="C函数.html">C 函数</a></h3>
+				</div>
+				<h1>C循环</h1>
+				<p>有的时候，我们可能需要多次执行同一块代码。一般情况下，语句是按顺序执行的：函数中的第一个语句先执行，接着是第二个语句，依此类推。</p>
+				<p>编程语言提供了更为复杂执行路径的多种控制结构。</p>
+				<p>循环语句允许我们多次执行一个语句或语句组，下面是大多数编程语言中循环语句的流程图：</p>
+				<img src="for_while.png" alt="Error" width="500" align="center"/>
+				<hr />
+				<h2>循环类型</h2>
+				<p>C 语言提供了以下几种循环类型。点击链接查看每个类型的细节。</p>
+				<table class="dataintable">
+					<tr>
+						<td>循环类型</td>
+						<td>描述</td>
+					</tr>
+					<tr>
+						<td>while 循环</td>
+						<td>当给定条件为真时，重复语句或语句组。它会在执行循环主体之前测试条件。</td>
+					</tr>
+					<tr>
+						<td>for 循环</td>
+						<td>多次执行一个语句序列，简化管理循环变量的代码。</td>
+					</tr>
+					<tr>
+						<td>do...while 循环</td>
+						<td>除了它是在循环主体结尾测试条件外，其他与 while 语句类似。</td>
+					</tr>
+					<tr>
+						<td>嵌套循环</td>
+						<td>您可以在 while、for 或 do..while 循环内使用一个或多个循环。</td>
+					</tr>
+				</table>
+				<hr/>
+				<h2>循环控制语句</h2>
+				<p>循环控制语句改变你代码的执行顺序。通过它你可以实现代码的跳转。</p>
+				<p>C 提供了下列的循环控制语句。点击链接查看每个语句的细节。</p>
+				<table class="dataintable">
+					<tr>
+						<td>控制语句</td>
+						<td>描述</td>
+					</tr>
+					<tr>
+						<td>break 语句</td>
+						<td>	终止<b>循环</b>或 <b>switch</b> 语句，程序流将继续执行紧接着循环或 switch 的下一条语句。</td>
+					</tr>
+					<tr>
+						<td>continue 语句</td>
+						<td>告诉一个循环体立刻停止本次循环迭代，重新开始下次循环迭代。</td>
+					</tr>
+					<tr>
+						<td>goto 语句</td>
+						<td>将控制转移到被标记的语句。但是不建议在程序中使用 goto 语句</td>
+					</tr>
+				</table>
+				<hr/>
+				<h2>无限循环</h2>
+				<p>如果条件永远不为假，则循环将变成无限循环。<b>for</b> 循环在传统意义上可用于实现无限循环。由于构成循环的三个表达式中任何一个都不是必需的，您可以将某些条件表达式留空来构成一个无限循环。</p>
+				<pre>#include &lt;stdio.h&gt;<br/><br/>int main ()<br/>{<br/>   for( ; ; )<br/>   {<br/>      printf("该循环会永远执行下去！\n");<br/>   }<br/>   return 0;<br/>}</pre>
+				<p>当条件表达式不存在时，它被假设为真。您也可以设置一个初始值和增量表达式，但是一般情况下，C 程序员偏向于使用 for(;;) 结构来表示一个无限循环。</p>
+				<p><b>注意</b>：您可以按 Ctrl + C 键终止一个无限循环。</p>
+			</div>
+			<!--右边导航栏-->
+			<div id="right_navigation">
+				<h2><img src="star.jpg" width="50" align="left">分类导航</h2>
+				<ul>
+					<li><a href="#服务端">服务端</a></li>
+					<li><a href="#数据端">数据端</a></li>
+					<li><a href="#开发工具">开发工具</a></li>
+					<li><a href="#网站建设">网站建设</a></li>
+					<li><a href="#HTML_CSS">HTML/CSS</a></li>
+					<li><a href="#JS">JavaScript</a></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

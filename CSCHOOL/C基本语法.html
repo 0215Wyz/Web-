@@ -1,0 +1,247 @@
+
+<html>
+	<head>
+		<title>C基本语法</title>
+		<link rel="stylesheet" type="text/css" href="c5.css" />
+		<style type="text/css">
+			#center_navigation{
+				margin:10px 10px 10px 10px;
+				padding:0;
+				/*border-style:dashed;
+				border-width:1px;*/
+				width: 950px;
+				height: 3000px;	
+				color:#36648B;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div id="container">
+			
+			<!--大标题-->
+			<div id="header_index">
+				<h1><a href="#CSCHOOL">Cschool</a></h1>
+			</div>
+			<!--导航栏-->
+			<div id="navigations">
+				<ul>
+					<li><a href="#HMOE">HOME</a></li>
+					<li><a href="#C">C</a></li>
+					<li><a href="#Cplusplus">C++</a></li>
+					<li><a href="#PHP">PHP</a></li>
+					<li><a href="#PYTHON">PYTHON</a></li>
+					<li><a href="#HTML">HTML</a></li>
+					<li><a href="#CSS">CSS</a></li>
+					<li><a href="#JAVA">JAVA</a></li>
+					<li><a href="#SQL">SQL</a></li>
+				</ul>
+			</div >
+			<!--左侧导航栏-->
+			<div id="left_navigation" >
+				<h2><img src="star.jpg" width="60" align="left">C教程</h2>
+				<ul>
+					<li><a href="C语言教程.html" target="_top">C 语言教程</a></li>
+					<li><a href="C简介.html" target="_top">C 简介</a></li>
+					<li><a href="C环境设置.html" target="_top">C 环境设置</a></li>
+					<li class="currentLink"><a href="C基本语法.html" target="_top">C 基本语法</a></li>
+					<li><a href="C数据类型.html" target="_top">C 数据类型</a></li>
+					<li><a href="C变量.html" target="_top">C 变量</a></li>
+					<li><a href="C常量.html" target="_top">C 常量</a></li>
+					<li><a href="C运算符.html" target="_top">C 运算符</a></li>
+					<li><a href="C判断.html" target="_top">C 判断</a></li>
+					<li><a href="C循环.html" target="_top">C 循环</a></li>
+					<li><a href="C函数.html" target="_top">C 函数</a></li>
+					<li><a href="C数组.html" target="_top">C 数组</a></li>
+					<li><a href="C指针.html" target="_top">C 指针</a></li>
+					<li><a href="C字符串.html" target="_top">C 字符串</a></li>
+					<li><a href="C结构体.html" target="_top">C 结构体</a></li>
+					<li><a href="C文件读写.html" target="_top">C 文件读写</a></li>
+				</ul>
+			</div>
+			<!--中间信息栏-->
+			<div id="center_navigation" >
+				<div id="title_navigation">
+					<img src="arrow.jpg" alt="Error" width="60" align="right"/>
+					<h3><a href="C数据类型.html">C 数据类型</a></h3>
+				</div>
+				<h1>C基本语法</h1>
+				<hr />
+				<h1>C 的令牌（Tokens）</h1>
+				<p>C 程序由各种令牌组成，令牌可以是关键字、标识符、常量、字符串值，或者是一个符号。例如，下面的 C 语句包括五个令牌：分号，注释，标识符，关键字，空格。</p>
+				<hr />
+				<h2>分号 ；</h2>
+				<p>在 C 程序中，分号是语句结束符。也就是说，每个语句必须以分号结束。它表明一个逻辑实体的结束。</p>
+				<pre>printf("Hello, World! \n");<br/>return 0;</pre>
+				<hr/>
+				<h2>注释</h2>
+				<p>不能在注释内嵌套注释，注释也不能出现在字符串或字符值中。</p>
+				<p><b>单行注释</b>以<b>//</b>开始，可以独占一行</p>
+				<p><b>/* */</b>这种格式的注释可以单行或多行。</p>
+				<pre>/* 单行注释 */<br/>/*<br/>&nbsp;&nbsp;多行注释<br/>&nbsp;&nbsp;多行注释<br/>&nbsp;&nbsp;多行注释<br/>*/</pre>
+				<hr/>
+				<h2>标识符</h2>
+				<p>C 标识符是用来标识变量、函数，或任何其他用户自定义项目的名称。一个标识符以字母 A-Z 或 a-z 或下划线 _ 开始，后跟零个或多个字母、下划线和数字（0-9）。</p>
+				<p>C 标识符内不允许出现标点字符，比如 @、$ 和 %。C 是区分大小写的编程语言。因此，在 C 中，Manpower 和 manpower 是两个不同的标识符。下面列出几个有效的标识符：</p>
+				<pre>mohd       zara    abc   move_name  a_123<br/>myname50   _temp   j     a23b9      retVal</pre>
+				<hr/>
+				<h2>关键字</h2>
+				<p>下表列出了 C 中的保留字。这些保留字不能作为常量名、变量名或其他标识符名称。</p>
+				<table class="dataintable">
+					<tr>
+						<td>关键字</td>
+						<td>说明</td>
+					</tr>
+					<tr>
+						<td>atuo</td>
+						<td>声明自动变量</td>
+					</tr>
+					<tr>
+						<td>break</td>
+						<td>跳出当前循环</td>
+					</tr>
+					<tr>
+						<td>case</td>
+						<td>开关语句分支</td>
+					</tr>
+					<tr>
+						<td>char</td>
+						<td>声明字符型变量或函数返回值类型</td>
+					</tr>
+					<tr>
+						<td>const</td>
+						<td>声明只读变量</td>
+					</tr>
+					<tr>
+						<td>continue</td>
+						<td>结束当前循环，开始下一轮循环</td>
+					</tr>
+					<tr>
+						<td>default</td>
+						<td>开关语句中的"其它"分支</td>
+					</tr>
+					<tr>
+						<td>do</td>
+						<td>循环语句的循环体</td>
+					</tr>
+					<tr>
+						<td>double</td>
+						<td>声明双精度浮点型变量或函数返回值类型</td>
+					</tr>
+					<tr>
+						<td>else</td>
+						<td>条件语句否定分支（与 if 连用）</td>
+					</tr>
+					<tr>
+						<td>enum</td>
+						<td>声明枚举类型</td>
+					</tr>
+					<tr>
+						<td>extern</td>
+						<td>声明变量或函数是在其它文件或本文件的其他位置定义</td>
+					</tr>
+					<tr>
+						<td>float</td>
+						<td>声明浮点型变量或函数返回值类型</td>
+					</tr>
+					<tr>
+						<td>for</td>
+						<td>一种循环语句</td>
+					</tr>
+					<tr>
+						<td>goto</td>
+						<td>无条件跳转语句</td>
+					</tr>
+					<tr>
+						<td>if</td>
+						<td>条件语句</td>
+					</tr>
+					<tr>
+						<td>int</td>
+						<td>声明整型变量或函数</td>
+					</tr>
+					<tr>
+						<td>long</td>
+						<td>声明长整型变量或函数返回值类型</td>
+					</tr>
+					<tr>
+						<td>register</td>
+						<td>声明寄存器变量</td>
+					</tr>
+					<tr>
+						<td>return</td>
+						<td>子程序返回语句（可以带参数，也可不带参数）</td>
+					</tr>
+					<tr>
+						<td>short</td>
+						<td>声明短整型变量或函数</td>
+					</tr>
+					<tr>
+						<td>signed</td>
+						<td>声明有符号类型变量或函数</td>
+					</tr>
+					<tr>
+						<td>sizeof</td>
+						<td>计算数据类型或变量长度（即所占字节数）</td>
+					</tr>
+					<tr>
+						<td>static</td>
+						<td>声明静态变量</td>
+					</tr>
+					<tr>
+						<td>struct</td>
+						<td>声明结构体类型</td>
+					</tr>
+					<tr>
+						<td>switch</td>
+						<td>用于开关语句</td>
+					</tr>
+					<tr>
+						<td>用于开关语句</td>
+						<td>用以给数据类型取别名</td>
+					</tr>
+					<tr>
+						<td>unsigned</td>
+						<td>声明无符号类型变量或函数</td>
+					</tr>
+					<tr>
+						<td>union</td>
+						<td>声明共用体类型</td>
+					</tr>
+					<tr>
+						<td>void</td>
+						<td>声明函数无返回值或无参数，声明无类型指针</td>
+					</tr>
+					<tr>
+						<td>volatile</td>
+						<td>说明变量在程序执行中可被隐含地改变</td>
+					</tr>
+					<tr>
+						<td>while</td>
+						<td>循环语句的循环条件</td>
+					</tr>
+				</table>
+				<hr/>
+				<h2>C中的空格</h2>
+				<p>只包含空格的行，被称为空白行，可能带有注释，C 编译器会完全忽略它。</p>
+				<p>在 C 中，空格用于描述空白符、制表符、换行符和注释。空格分隔语句的各个部分，让编译器能识别语句中的某个元素（比如 int）在哪里结束，下一个元素在哪里开始。因此，在下面的语句中：</p>
+				<pre>int age;</pre>
+				<p>在这里，int 和 age 之间必须至少有一个空格字符（通常是一个空白符），这样编译器才能够区分它们。另一方面，在下面的语句中：</p>
+				<pre>fruit = apples + oranges;   // 获取水果的总数</pre>
+				<p>fruit 和 =，或者 = 和 apples 之间的空格字符不是必需的，但是为了增强可读性，您可以根据需要适当增加一些空格。</p>
+			</div>
+			<!--右边导航栏-->
+			<div id="right_navigation">
+				<h2><img src="star.jpg" width="50" align="left">分类导航</h2>
+				<ul>
+					<li><a href="#服务端">服务端</a></li>
+					<li><a href="#数据端">数据端</a></li>
+					<li><a href="#开发工具">开发工具</a></li>
+					<li><a href="#网站建设">网站建设</a></li>
+					<li><a href="#HTML_CSS">HTML/CSS</a></li>
+					<li><a href="#JS">JavaScript</a></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
